@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FileNest - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="../images/vitap_logo_white.png" alt="VIT-AP Logo">
+</header>
+
+<main class="main-dashboard">
+    <div class="dashboard">
+        <h2>FileNest Dashboard</h2>
+
+        <div class="upload-section">
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload</button>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <div id="filesContainer" class="files"></div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <img src="../images/vitap_logo_white.png" alt="VIT-AP Logo">
+    </div>
+
+    <div class="footer-right">
+        <p>VIT-AP University</p>
+        <p>Web Technologies Project</p>
+        <p>© 2026 FileNest</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    loadFiles();
+</script>
+
+</body>
+</html>
